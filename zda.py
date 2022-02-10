@@ -18,9 +18,9 @@ xx=float(input())
 l=[]
 for i in range(0,n+1):
   h=1.0
-  for j in range(0,k):
+  for j in range(0,i):
     h=h/(x(i)-x(j))
-  for j in range(k,n+1):
+  for j in range(i+1,n+1):
     h=h/(x(i)-x(j)) 
     l.append(h)
 L=0.0
