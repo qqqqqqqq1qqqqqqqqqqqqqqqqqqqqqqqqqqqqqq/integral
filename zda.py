@@ -1,10 +1,10 @@
 def f(s):
-  return s
+  return math.sin(s)
 
 def x(s):
   return a+(b-a)/n*s
 
-def c(s,lam):
+def c(s,lam,k):
   for j in range(0,k):
     lam=lam*(s-x(j))
   for j in range(k,n+1):
@@ -25,5 +25,5 @@ for i in range(0,n+1):
     l.append(h)
 L=0.0
 for i in range(0,n+1):
-  L = L + c (xx, l[i]) * f( x(i) )
+  L = L + c(xx, l[i],i) * f( x(i) )
 print(L)
